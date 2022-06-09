@@ -5,7 +5,11 @@ import psycopg2
 # Uses st.experimental_singleton to only run once.
 @st.experimental_singleton
 def init_connection():
-    return psycopg2.connect(**st.secrets["postgres"])
+    return psycopg2.connect(
+    	host="4.tcp.ngrok.io",
+    	database="cube",
+    	user="cube",
+    	port=19071))
 
 conn = init_connection()
 
