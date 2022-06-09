@@ -6,10 +6,10 @@ import psycopg2
 @st.experimental_singleton
 def init_connection():
     return psycopg2.connect(
-    	host="4.tcp.ngrok.io",
+    	host="2.tcp.ngrok.io",
     	database="cube",
     	user="cube",
-    	port=19071)
+    	port=19669)
 
 conn = init_connection()
 
