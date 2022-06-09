@@ -9,7 +9,7 @@ def init_connection():
     	host="4.tcp.ngrok.io",
     	database="cube",
     	user="cube",
-    	port=19071))
+    	port=19071)
 
 conn = init_connection()
 
