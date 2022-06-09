@@ -8,8 +8,9 @@ def init_connection():
     return psycopg2.connect(
     	host="2.tcp.ngrok.io",
     	database="cube",
-    	user="cube",
-    	port=19669)
+    	user="root",
+    	port=19669,
+	password="pass")
 
 conn = init_connection()
 
